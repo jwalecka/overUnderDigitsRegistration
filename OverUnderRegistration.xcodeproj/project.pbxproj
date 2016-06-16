@@ -14,6 +14,10 @@
 		92D02A6C1CECF7C2005AE05D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92D02A6A1CECF7C2005AE05D /* LaunchScreen.storyboard */; };
 		92D02A771CECF7C2005AE05D /* OverUnderRegistrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D02A761CECF7C2005AE05D /* OverUnderRegistrationTests.swift */; };
 		92D02A821CECF7C2005AE05D /* OverUnderRegistrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D02A811CECF7C2005AE05D /* OverUnderRegistrationUITests.swift */; };
+		92DD33EB1CED190400D1AF02 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD33EA1CED190400D1AF02 /* Settings.swift */; };
+		92DF11381CED285D008EF076 /* NumberEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DF11371CED285D008EF076 /* NumberEntryViewController.swift */; };
+		92DF113C1CED2B4F008EF076 /* PhoneNumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DF113B1CED2B4F008EF076 /* PhoneNumberFormatter.swift */; };
+		92DF113E1CED2B5F008EF076 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DF113D1CED2B5F008EF076 /* StringExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		92D02A7D1CECF7C2005AE05D /* OverUnderRegistrationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OverUnderRegistrationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92D02A811CECF7C2005AE05D /* OverUnderRegistrationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverUnderRegistrationUITests.swift; sourceTree = "<group>"; };
 		92D02A831CECF7C2005AE05D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92DD33EA1CED190400D1AF02 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		92DF11371CED285D008EF076 /* NumberEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberEntryViewController.swift; sourceTree = "<group>"; };
+		92DF113B1CED2B4F008EF076 /* PhoneNumberFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumberFormatter.swift; sourceTree = "<group>"; };
+		92DF113D1CED2B5F008EF076 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				92D02A601CECF7C2005AE05D /* OverUnderRegistration */,
+				92DF113A1CED2B2B008EF076 /* Extensions */,
 				92D02A751CECF7C2005AE05D /* OverUnderRegistrationTests */,
 				92D02A801CECF7C2005AE05D /* OverUnderRegistrationUITests */,
 				92D02A5F1CECF7C2005AE05D /* Products */,
@@ -98,11 +107,12 @@
 			isa = PBXGroup;
 			children = (
 				92D02A611CECF7C2005AE05D /* AppDelegate.swift */,
-				92D02A631CECF7C2005AE05D /* ViewController.swift */,
 				92D02A651CECF7C2005AE05D /* Main.storyboard */,
 				92D02A681CECF7C2005AE05D /* Assets.xcassets */,
 				92D02A6A1CECF7C2005AE05D /* LaunchScreen.storyboard */,
+				92DD33EA1CED190400D1AF02 /* Settings.swift */,
 				92D02A6D1CECF7C2005AE05D /* Info.plist */,
+				92DF11391CED2870008EF076 /* ViewControllers */,
 			);
 			path = OverUnderRegistration;
 			sourceTree = "<group>";
@@ -123,6 +133,25 @@
 				92D02A831CECF7C2005AE05D /* Info.plist */,
 			);
 			path = OverUnderRegistrationUITests;
+			sourceTree = "<group>";
+		};
+		92DF11391CED2870008EF076 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				92D02A631CECF7C2005AE05D /* ViewController.swift */,
+				92DF11371CED285D008EF076 /* NumberEntryViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		92DF113A1CED2B2B008EF076 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				92DF113D1CED2B5F008EF076 /* StringExtension.swift */,
+				92DF113B1CED2B4F008EF076 /* PhoneNumberFormatter.swift */,
+			);
+			name = Extensions;
+			path = OverUnderRegistration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +285,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92DF11381CED285D008EF076 /* NumberEntryViewController.swift in Sources */,
+				92DD33EB1CED190400D1AF02 /* Settings.swift in Sources */,
+				92DF113E1CED2B5F008EF076 /* StringExtension.swift in Sources */,
 				92D02A641CECF7C2005AE05D /* ViewController.swift in Sources */,
+				92DF113C1CED2B4F008EF076 /* PhoneNumberFormatter.swift in Sources */,
 				92D02A621CECF7C2005AE05D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,6 +515,7 @@
 				92D02A881CECF7C2005AE05D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		92D02A891CECF7C2005AE05D /* Build configuration list for PBXNativeTarget "OverUnderRegistrationTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +524,7 @@
 				92D02A8B1CECF7C2005AE05D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		92D02A8C1CECF7C2005AE05D /* Build configuration list for PBXNativeTarget "OverUnderRegistrationUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +533,7 @@
 				92D02A8E1CECF7C2005AE05D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
